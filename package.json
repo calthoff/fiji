@@ -1,0 +1,10 @@
+{
+  "name": "Fiji",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "latest"
+  },
+  "main": "index.js",
+  "author": "Cory Althoff"
+}

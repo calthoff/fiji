@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body  ng-app="symphony" ng-controller="scController as sc">
+<div class="container">
+    <div class="row text-center" ng-repeat="list in sc.final_product">
+        <div ng-repeat="item in list">
+            <div class="col-md-4  section " >
+                <img class="" ng-src="{{item[0]}}" /> <br>
+                <span id="description">{{item[2]}} </span> <br>
+                <span id="pink"> {{item[1] | currency}} </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
