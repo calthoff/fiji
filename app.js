@@ -18,9 +18,8 @@ function chunk(arr, size) {
                 store.products.push([data.products[i].mainImage.ref,
                     data.products[i].defaultPriceInCents/100, data.products[i].name]);
             }
-            console.log(store.products);
+            // create list of lists of length 3
             store.final_product = chunk(store.products,3);
-            console.log(store.final_product);
         });
     }]);
 })();
